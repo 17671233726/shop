@@ -71,10 +71,9 @@ export default {
       this.$refs.loginFormRef.validate((valid) => {
         if (!valid) return;
         loginValidate(this.loginForm).then((res) => {
-          let { data } = res;
-          if (data.meta.status === 400) return this.$message.error("登录失败");
+          if (res.meta.status === 400) return this.$message.error("登录失败");
           this.$message.success("登录成功");
-          window.sessionStorage.setItem("token", data.data.token);
+          window.sessionStorage.setItem("token", res.data.token);
           this.$router.push("./home");
         });
       });
