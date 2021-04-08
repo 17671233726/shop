@@ -38,3 +38,19 @@ export function removeUser(id) {   //删除用户
         method: 'delete',
     })
 }
+
+export function getRolesList() {   //获取角色列表
+    return request({
+        url: 'roles'
+    })
+}
+
+export function setUserRole(id, rid) { //分配用户角色
+    return request({
+        url: `users/${id}/role`,
+        data: {
+            rid
+        },
+        method: 'put'
+    })
+}
