@@ -12,6 +12,7 @@ const Cate = () => import('views/goods/Cate');
 const Params = () => import('views/goods/Params');
 const GoodsList=()=>import('views/goods/List')
 const Add=()=>import('views/goods/Add')
+const Order=()=>import('views/order/Order')
 
 const router = new VueRouter({
     routes: [
@@ -58,6 +59,9 @@ const router = new VueRouter({
                 },
                 {
                     path:'/goods/add',component:Add
+                },
+                {
+                    path:'/orders',component:Order
                 }
             ]
         }
