@@ -9,6 +9,9 @@ const User = () => import('views/user/User')
 const Rights = () => import('views/power/Rights');
 const Roles = () => import('views/power/Roles');
 const Cate = () => import('views/goods/Cate');
+const Params = () => import('views/goods/Params');
+const GoodsList=()=>import('views/goods/List')
+const Add=()=>import('views/goods/Add')
 
 const router = new VueRouter({
     routes: [
@@ -44,6 +47,17 @@ const router = new VueRouter({
                 {
                     path: '/categories',
                     component: Cate
+                },
+                {
+                    path: '/params',
+                    component: Params
+                },
+                {
+                    path: '/goods',
+                    component: GoodsList
+                },
+                {
+                    path:'/goods/add',component:Add
                 }
             ]
         }

@@ -1,0 +1,20 @@
+.el-breadcrumb {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  
+  .el-cascader-menu{
+    height:300px;
+  }
+  .el-steps{
+      margin-top: 20px;
+  }
+  .el-step__title{
+      font-size: 14px;
+  }
+  .el-tabs{
+    margin-top: 20px;
+  }
+  .ql-editor{
+    height: 300px !important;
+}

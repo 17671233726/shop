@@ -6,11 +6,14 @@ import router from "./router/index"
 //element-ui引入
 import element from "./plugins/element-ui"
 
+import './filter/index'
+
 //vue-table-with-tree-grid引入
 import TreeTable from 'vue-table-with-tree-grid';
 Vue.component('tree-table', TreeTable);
 
 import './assets/css/normalize.css'
+import './assets/css/base.css'
 import './assets/fonts/iconfont.css'
 
 Vue.config.productionTip = false
